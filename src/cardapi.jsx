@@ -70,7 +70,7 @@ const handleMouseEnter = (dataKey) => {
   <p className='text-[15px] sm:text-[20px] lg:text-[20px] mt-[20px] text-[grey]'>{text}</p>
   <div className='flex gap-[5px]'>
   
-  <h1 className=' font-bold text-[27px] font-[TimesNewRoman]'>{field}</h1>
+  <h1 className=' font-bold text-[22px] sm:text-[27px] lg:text-[27px] font-[TimesNewRoman]'>{field}</h1>
 
   </div>
   <div className=' flex items-[center] gap-[20px] ml-[30px] mr-[30px] mt-[30px]'>
@@ -79,7 +79,7 @@ const handleMouseEnter = (dataKey) => {
   
   <SlCalender onMouseEnter={()=> handleMouseEnter('dob')}  size={31} className='transition-transform transform hover:translate-y-[-10px]  text-[lightgrey] hover:text-[green]' />
   <FaMapLocation onMouseEnter={()=> handleMouseEnter('location')}  size={31} className='transition-transform transform hover:translate-y-[-10px]  text-[lightgrey] hover:text-[green]'/>
-  <FaPhoneAlt onMouseEnter={()=> handleMouseEnter('phone')}  size={31} className='transition-transform transform hover:translate-y-[-10px]  text-[lightgrey] hover:text-[green]' />
+  <FaPhoneAlt onMouseEnter={()=> handleMouseEnter('phone')}  size={31} className='transition-transform transform hover:translate-y-[-10px]  text-[lightgrey] hover:-[green]' />
   <FaLock onMouseEnter={()=> handleMouseEnter('password')}  size={31} className='transition-transform transform hover:translate-y-[-10px]  text-[lightgrey] hover:text-[green]' />
  
   </div>
