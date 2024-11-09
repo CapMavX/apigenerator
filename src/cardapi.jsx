@@ -79,7 +79,7 @@ const handleMouseEnter = (dataKey) => {
   
   <SlCalender onMouseEnter={()=> handleMouseEnter('dob')}  size={31} className='transition-transform transform hover:translate-y-[-10px]  text-[lightgrey] hover:text-[green]' />
   <FaMapLocation onMouseEnter={()=> handleMouseEnter('location')}  size={31} className='transition-transform transform hover:translate-y-[-10px]  text-[lightgrey] hover:text-[green]'/>
-  <FaPhoneAlt onMouseEnter={()=> handleMouseEnter('phone')}  size={31} className='transition-transform transform hover:translate-y-[-10px]  text-[lightgrey] hover:-[green]' />
+  <FaPhoneAlt onMouseEnter={()=> handleMouseEnter('phone')}  size={31} className='transition-transform transform hover:translate-y-[-10px]  text-[lightgrey] hover:text-[green]' />
   <FaLock onMouseEnter={()=> handleMouseEnter('password')}  size={31} className='transition-transform transform hover:translate-y-[-10px]  text-[lightgrey] hover:text-[green]' />
  
   </div>
