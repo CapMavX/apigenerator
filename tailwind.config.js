@@ -5,8 +5,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'xs': '480px', // Custom extra-small breakpoint at 480px
+      },
+    },
+  },
+  variants: {
+    extend: {
+      margin: ['xs'], // Ensure xs variant is available for margin if needed
+      padding: ['xs'],
+    },
   },
   plugins: [],
 }
+
+
 

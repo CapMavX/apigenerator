@@ -24,9 +24,7 @@ useEffect(() =>{
   })
 
 },[])
-useEffect(() => {
-  console.log('Updated:', info)
-},[info])
+
 
 const handleMouseEnter = (dataKey) => {
   
@@ -65,24 +63,24 @@ const handleMouseEnter = (dataKey) => {
 };
 
   return (
-    <div className=' mt-[20px] sm:mt-[120px] lg:mt-[150px] xl:mt-[100px]  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[ghostwhite] w-[300px] sm:w-fit lg:w-fit   p-4 rounded' >
+    <div className=' bg-white drop-shadow-[0_10px_20px_rgba(0,0,0,0.25)] p-6 rounded-lg w-full max-w-sm mx-auto   p-4 rounded' >
 {info ? (
   <div className='flex flex-col items-center mt-[10px]'>
   <img src={info.picture.large} alt="" className=' w-[90px] sm:w-[130px] lg:w-[130px] rounded-[300px] '/>
   <p className='text-[15px] sm:text-[20px] lg:text-[20px] mt-[20px] text-[grey]'>{text}</p>
   <div className='flex gap-[5px]'>
   
-  <h1 className=' text-[20px] sm:text-[30px] lg:text-[30px]text-[30px] font-[TimesNewRoman]'>{field}</h1>
+  <h1 className=' font-bold text-[27px] font-[TimesNewRoman]'>{field}</h1>
 
   </div>
-  <div className=' flex items-[center] gap-[10px] sm:gap-[40px] lg:gap-[40px] ml-[30px] mr-[30px] mt-[30px]'>
-  <CgProfile onMouseEnter={()=> handleMouseEnter('name')} className='text-[lightgrey] hover:text-[green]' size={31}/>
-  <CiMail  onMouseEnter={()=> handleMouseEnter('email')} size={31} className='text-[lightgrey] hover:text-[green]'/>
+  <div className=' flex items-[center] gap-[20px] ml-[30px] mr-[30px] mt-[30px]'>
+  <CgProfile onMouseEnter={()=> handleMouseEnter('name')} className='  transition-transform transform hover:translate-y-[-10px]  text-[lightgrey] hover:text-[green]' size={31}/>
+  <CiMail  onMouseEnter={()=> handleMouseEnter('email')} size={31} className='transition-transform transform hover:translate-y-[-10px]  text-[lightgrey] hover:text-[green]'/>
   
-  <SlCalender onMouseEnter={()=> handleMouseEnter('dob')}  size={31} className='text-[lightgrey] hover:text-[green]' />
-  <FaMapLocation onMouseEnter={()=> handleMouseEnter('location')}  size={31} className='text-[lightgrey] hover:text-[green]'/>
-  <FaPhoneAlt onMouseEnter={()=> handleMouseEnter('phone')}  size={31} className='text-[lightgrey] hover:color-[green]' />
-  <FaLock onMouseEnter={()=> handleMouseEnter('password')}  size={31} className='text-[lightgrey] hover:text-[green]' />
+  <SlCalender onMouseEnter={()=> handleMouseEnter('dob')}  size={31} className='transition-transform transform hover:translate-y-[-10px]  text-[lightgrey] hover:text-[green]' />
+  <FaMapLocation onMouseEnter={()=> handleMouseEnter('location')}  size={31} className='transition-transform transform hover:translate-y-[-10px]  text-[lightgrey] hover:text-[green]'/>
+  <FaPhoneAlt onMouseEnter={()=> handleMouseEnter('phone')}  size={31} className='transition-transform transform hover:translate-y-[-10px]  text-[lightgrey] hover:text-[green]' />
+  <FaLock onMouseEnter={()=> handleMouseEnter('password')}  size={31} className='transition-transform transform hover:translate-y-[-10px]  text-[lightgrey] hover:text-[green]' />
  
   </div>
   </div>

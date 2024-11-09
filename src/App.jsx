@@ -9,10 +9,10 @@ function App() {
 
 
   return (
-    <>
+    <div className='flex flex-col gap-[20px]'>
       <Apigenerator/>
       <Cardapi/>
-    </>
+    </div>
   )
 }
 
